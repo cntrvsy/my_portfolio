@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import App from "$lib/Components/App.svelte";
 
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
@@ -21,6 +22,7 @@
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
 </script>
 
 <!-- App Shell -->
@@ -59,6 +61,12 @@
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
+	<!-- 3D background -->
+	<div class="absolute h-full w-full z-0">
+		<App/>
+	</div>
 	<!-- Page Route Content -->
-	<slot />
+	<div class="relative z-10">
+		<slot />
+	</div>
 </AppShell>

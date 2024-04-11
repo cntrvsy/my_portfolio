@@ -1,5 +1,5 @@
 <script>
-import App from "$lib/Components/App.svelte";
+
 
 </script>
 <!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
@@ -8,9 +8,6 @@ import App from "$lib/Components/App.svelte";
 	<div class="space-y-10 text-center flex flex-col items-center">
 		<h2 class="h2">Welcome to Skeleton.</h2>
 		
-		<div class="relative h-full w-full">
-			<App/>
-		</div>
 
 		<!-- / -->
 		<div class="flex justify-center space-x-2">
