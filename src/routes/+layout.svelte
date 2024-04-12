@@ -1,6 +1,9 @@
 <script lang="ts">
 	import '../app.postcss';
+	import { onMount } from 'svelte';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { fade } from 'svelte/transition';
+	import '@fontsource/open-sauce-sans';
 	import App from "$lib/Components/App.svelte";
 
 	// Highlight JS
@@ -22,6 +25,14 @@
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	//prevent flashbang
+	let ready = false;
+	
+	onMount(() => {
+		ready = true;
+	});
+	
 
 </script>
 
@@ -62,11 +73,19 @@
 		</AppBar>
 	</svelte:fragment>
 	<!-- 3D background -->
-	<div class="absolute h-full w-full z-0">
-		<App/>
-	</div>
+	{#if ready}
+		<div class="absolute h-full w-full z-0" transition:fade={{ duration: 4000 }}>
+			<App/>
+		</div>
+	{/if}
 	<!-- Page Route Content -->
 	<div class="relative z-10">
 		<slot />
 	</div>
 </AppShell>
+
+<style>
+	:global(body){
+		font-family: 'Open Sauce Sans', sans-serif;
+	}
+</style>
