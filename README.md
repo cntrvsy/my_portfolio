@@ -1,22 +1,17 @@
-# create-svelte
+# HEY THERE!!!
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This my portfolio code that uses sveltekit, skeletonUI, threlte(three.js) and Motion one to display what i have been doing.
 
-## Creating a project
+for simplicity sake and too avoid to many questions, a lot of comments will be littered around for anyone who is unfamiliar with the technologies i've used or, would like to know my thought process behind a specific approach.  
 
-If you're seeing this, you've probably already done this step. Congrats!
+It ain't much but right now but this is where ill be updating my project work too.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## SARCASM
+![INSERT CLOUDY CHANCE WITH A MEAT BALL BLACK GUY SAYING'ITS ENOUGH TO MAKE A GROWN MAN CRY'](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2hvMHd6eTM5NWN4NW9rbDAwN2ozeWMzbWQxeGg1ZGszOTZmdDd4eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/b2fpJKiHKjvgY/giphy.gif) 
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've cloned the project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server like so:
 
 ```bash
 npm run dev
@@ -27,7 +22,7 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of your app:
+To create a production version of your edited version of the portfolio:
 
 ```bash
 npm run build
@@ -35,4 +30,4 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> NOTE: to deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment as this specific repos target will change as the years go on.
