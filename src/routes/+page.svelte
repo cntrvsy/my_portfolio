@@ -33,10 +33,10 @@ onMount(() => {
 	<div class="h-screen w-full flex items-center justify-center relative">
 		<!-- Hero Text -->
 		<div class="flex-col">
-			<h1  bind:this={heroHeading} class="font-normal text-8xl text-left">
+			<h1 class="font-normal text-8xl text-left">
 				Benin<br>Mukabanah
 			</h1>
-			<h3 bind:this={heroSubHeading} class="text-3xl text-left py-8">
+			<h3  class="text-3xl text-left py-8">
 				Software Developer
 			</h3>
 		</div>
